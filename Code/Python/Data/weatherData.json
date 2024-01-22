@@ -1,0 +1,432 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#"
+        }
+    ],
+    "type": "Feature",
+    "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+            [
+                [
+                    -96.816904100000002,
+                    32.790843099999996
+                ],
+                [
+                    -96.816543500000009,
+                    32.768216199999998
+                ],
+                [
+                    -96.789640000000006,
+                    32.768516999999996
+                ],
+                [
+                    -96.789995300000001,
+                    32.791144099999997
+                ],
+                [
+                    -96.816904100000002,
+                    32.790843099999996
+                ]
+            ]
+        ]
+    },
+    "properties": {
+        "updated": "2024-01-22T02:08:05+00:00",
+        "units": "us",
+        "forecastGenerator": "BaselineForecastGenerator",
+        "generatedAt": "2024-01-22T05:04:31+00:00",
+        "updateTime": "2024-01-22T02:08:05+00:00",
+        "validTimes": "2024-01-21T20:00:00+00:00/P7DT17H",
+        "elevation": {
+            "unitCode": "wmoUnit:m",
+            "value": 136.8552
+        },
+        "periods": [
+            {
+                "number": 1,
+                "name": "Tonight",
+                "startTime": "2024-01-21T23:00:00-06:00",
+                "endTime": "2024-01-22T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 34,
+                "temperatureUnit": "F",
+                "temperatureTrend": "rising",
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 1.1111111111111112
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 92
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "ESE",
+                "icon": "https://api.weather.gov/icons/land/night/rain_showers,50/rain_showers,100?size=medium",
+                "shortForecast": "Rain Showers",
+                "detailedForecast": "Rain showers before 3am, then rain. Cloudy. Low around 34, with temperatures rising to around 36 overnight. East southeast wind 5 to 10 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible."
+            },
+            {
+                "number": 2,
+                "name": "Monday",
+                "startTime": "2024-01-22T06:00:00-06:00",
+                "endTime": "2024-01-22T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 44,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 90
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 6.1111111111111107
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "ESE",
+                "icon": "https://api.weather.gov/icons/land/day/rain,90/rain,40?size=medium",
+                "shortForecast": "Rain",
+                "detailedForecast": "Rain before noon, then a chance of rain and patchy fog. Cloudy, with a high near 44. East southeast wind 5 to 10 mph. Chance of precipitation is 90%. New rainfall amounts between a half and three quarters of an inch possible."
+            },
+            {
+                "number": 3,
+                "name": "Monday Night",
+                "startTime": "2024-01-22T18:00:00-06:00",
+                "endTime": "2024-01-23T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 44,
+                "temperatureUnit": "F",
+                "temperatureTrend": "rising",
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 30
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 8.3333333333333339
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/night/fog/rain_showers,30?size=medium",
+                "shortForecast": "Areas Of Fog",
+                "detailedForecast": "Areas of fog before 3am, then areas of fog and a chance of rain showers. Cloudy. Low around 44, with temperatures rising to around 47 overnight. Southeast wind around 5 mph. Chance of precipitation is 30%. New rainfall amounts between a tenth and quarter of an inch possible."
+            },
+            {
+                "number": 4,
+                "name": "Tuesday",
+                "startTime": "2024-01-23T06:00:00-06:00",
+                "endTime": "2024-01-23T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 59,
+                "temperatureUnit": "F",
+                "temperatureTrend": "falling",
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 80
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 12.222222222222221
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "ENE",
+                "icon": "https://api.weather.gov/icons/land/day/tsra,40/tsra,80?size=medium",
+                "shortForecast": "Areas Of Fog",
+                "detailedForecast": "Areas of fog and showers and thunderstorms. Cloudy. High near 59, with temperatures falling to around 57 in the afternoon. East northeast wind 5 to 10 mph. Chance of precipitation is 80%."
+            },
+            {
+                "number": 5,
+                "name": "Tuesday Night",
+                "startTime": "2024-01-23T18:00:00-06:00",
+                "endTime": "2024-01-24T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 51,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 60
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 12.222222222222221
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "NNW",
+                "icon": "https://api.weather.gov/icons/land/night/tsra,60/tsra,50?size=medium",
+                "shortForecast": "Showers And Thunderstorms Likely",
+                "detailedForecast": "Showers and thunderstorms likely. Cloudy, with a low around 51. North northwest wind 5 to 10 mph. Chance of precipitation is 60%."
+            },
+            {
+                "number": 6,
+                "name": "Wednesday",
+                "startTime": "2024-01-24T06:00:00-06:00",
+                "endTime": "2024-01-24T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 64,
+                "temperatureUnit": "F",
+                "temperatureTrend": "falling",
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 50
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 11.666666666666666
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "NNW",
+                "icon": "https://api.weather.gov/icons/land/day/rain_showers,50/rain_showers,20?size=medium",
+                "shortForecast": "Chance Rain Showers",
+                "detailedForecast": "A chance of rain showers. Mostly cloudy. High near 64, with temperatures falling to around 60 in the afternoon. North northwest wind 5 to 10 mph. Chance of precipitation is 50%."
+            },
+            {
+                "number": 7,
+                "name": "Wednesday Night",
+                "startTime": "2024-01-24T18:00:00-06:00",
+                "endTime": "2024-01-25T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 44,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 11.666666666666666
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 mph",
+                "windDirection": "NW",
+                "icon": "https://api.weather.gov/icons/land/night/bkn?size=medium",
+                "shortForecast": "Mostly Cloudy",
+                "detailedForecast": "Mostly cloudy, with a low around 44. Northwest wind around 5 mph."
+            },
+            {
+                "number": 8,
+                "name": "Thursday",
+                "startTime": "2024-01-25T06:00:00-06:00",
+                "endTime": "2024-01-25T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 65,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 9.4444444444444446
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "WSW",
+                "icon": "https://api.weather.gov/icons/land/day/sct?size=medium",
+                "shortForecast": "Mostly Sunny",
+                "detailedForecast": "Mostly sunny, with a high near 65. West southwest wind 5 to 10 mph."
+            },
+            {
+                "number": 9,
+                "name": "Thursday Night",
+                "startTime": "2024-01-25T18:00:00-06:00",
+                "endTime": "2024-01-26T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 46,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 9.4444444444444446
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 99
+                },
+                "windSpeed": "5 mph",
+                "windDirection": "SE",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 46. Southeast wind around 5 mph."
+            },
+            {
+                "number": 10,
+                "name": "Friday",
+                "startTime": "2024-01-26T06:00:00-06:00",
+                "endTime": "2024-01-26T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 65,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 20
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 10
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 100
+                },
+                "windSpeed": "5 to 10 mph",
+                "windDirection": "ESE",
+                "icon": "https://api.weather.gov/icons/land/day/bkn/tsra_sct,20?size=medium",
+                "shortForecast": "Partly Sunny then Slight Chance Showers And Thunderstorms",
+                "detailedForecast": "A slight chance of showers and thunderstorms after noon. Partly sunny, with a high near 65. Chance of precipitation is 20%."
+            },
+            {
+                "number": 11,
+                "name": "Friday Night",
+                "startTime": "2024-01-26T18:00:00-06:00",
+                "endTime": "2024-01-27T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 44,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 30
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 10
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 96
+                },
+                "windSpeed": "10 mph",
+                "windDirection": "NNE",
+                "icon": "https://api.weather.gov/icons/land/night/tsra_sct,30/tsra_sct,20?size=medium",
+                "shortForecast": "Chance Showers And Thunderstorms then Slight Chance Showers And Thunderstorms",
+                "detailedForecast": "A chance of showers and thunderstorms before midnight, then a slight chance of showers and thunderstorms. Mostly cloudy, with a low around 44. Chance of precipitation is 30%."
+            },
+            {
+                "number": 12,
+                "name": "Saturday",
+                "startTime": "2024-01-27T06:00:00-06:00",
+                "endTime": "2024-01-27T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 55,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 6.1111111111111107
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 93
+                },
+                "windSpeed": "10 to 15 mph",
+                "windDirection": "NNW",
+                "icon": "https://api.weather.gov/icons/land/day/bkn?size=medium",
+                "shortForecast": "Partly Sunny",
+                "detailedForecast": "Partly sunny, with a high near 55."
+            },
+            {
+                "number": 13,
+                "name": "Saturday Night",
+                "startTime": "2024-01-27T18:00:00-06:00",
+                "endTime": "2024-01-28T06:00:00-06:00",
+                "isDaytime": false,
+                "temperature": 37,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 3.8888888888888888
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 89
+                },
+                "windSpeed": "10 to 15 mph",
+                "windDirection": "NNW",
+                "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+                "shortForecast": "Partly Cloudy",
+                "detailedForecast": "Partly cloudy, with a low around 37."
+            },
+            {
+                "number": 14,
+                "name": "Sunday",
+                "startTime": "2024-01-28T06:00:00-06:00",
+                "endTime": "2024-01-28T18:00:00-06:00",
+                "isDaytime": true,
+                "temperature": 56,
+                "temperatureUnit": "F",
+                "temperatureTrend": null,
+                "probabilityOfPrecipitation": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": null
+                },
+                "dewpoint": {
+                    "unitCode": "wmoUnit:degC",
+                    "value": 2.7777777777777777
+                },
+                "relativeHumidity": {
+                    "unitCode": "wmoUnit:percent",
+                    "value": 89
+                },
+                "windSpeed": "10 mph",
+                "windDirection": "N",
+                "icon": "https://api.weather.gov/icons/land/day/few?size=medium",
+                "shortForecast": "Sunny",
+                "detailedForecast": "Sunny, with a high near 56."
+            }
+        ]
+    }
+}
