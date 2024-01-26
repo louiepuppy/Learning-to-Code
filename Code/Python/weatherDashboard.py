@@ -13,25 +13,46 @@
 # Step 5: Build the Dashboard
 # Use a library like Tkinter to build a simple GUI. Display the fetched weather data on this dashboard.
 
+import json
 import pandas as pd 
 import requests as rq 
 import tkinter as tk 
 
 
+# Main program function
 def main():
-    # TODO: rewrite all this i think its bad
-    apiResponse = rq.get(url="https://api.weather.gov/gridpoints/FWD/89,104/forecast")
-    weatherData = apiResponse.text
-    
-    with open("Learning-to-Code\\Code\\Python\\Data\\weatherData.json", "w") as file:
-        file.write(weatherData)
-        # FIXME: is broken
-        df = pd.read_json("Learning-to-Code\\Code\\Python\\Data\\weatherData.json")
-
+    global df
+    global weatherData
+    try:
+        # Gets rawData from weather.gov API
+        apiResponse = rq.get(url="https://api.weather.gov/gridpoints/FWD/89,104/forecast")
+        rawData = json.loads(apiResponse.text)
+        weatherData = rawData["properties"]["periods"]
+        parsedData = []
+        
+        # Iterate through weatherData to parse it to store in a list
+        for period in weatherData:
+            name = period["name"]
+            temperature = period["temperature"]
+            precipitation = period["probabilityOfPrecipitation"]["value"]
+            windSpeed = period["windSpeed"]
+            windDir = period["windDirection"]
+            shortForecast = period["shortForecast"]
+            detailedForecast = period["detailedForecast"]
+            
+            # store parsed data into a list
+            parsedData.append([name, temperature, precipitation, windSpeed, windDir, shortForecast, detailedForecast])
+            
+        # create a pandas dataframe from parsed data
+        df = pd.DataFrame(parsedData, columns=["Name", "Temperature", "Chance of Precipitation", "Wind Speed", "Wind Direction", "Short Forecast", "Detailed Forecast"])
+        print(df)
+    except Exception as e:
+        print(f"Error: {e}")
 
 def display_window():
     # TODO: build the dashboard
     window = tk.Tk()
+    window.geometry("1280x720")
 
 
 if __name__ == "__main__":
