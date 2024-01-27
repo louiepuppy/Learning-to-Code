@@ -1,14 +1,28 @@
 #include <iostream>
+#include <cmath>
+#include <iomanip>
+
 using namespace std;
 
+double square_root_calculator(double x) {
+	return sqrt(x);
+}
 
+int main() {
+	double num;
+	char choice;
 
-int main(){
+	do {
+		cout << "Enter a number: ";
+		cin >> num;
 
-    string letter = "abcdefghijklmnopqrstuvwxyz";
-    string number = "0123456789";
+		cout << "The square root of " << num << " is " << fixed << setprecision(2) << square_root_calculator(num) << endl;
 
-    cout << letter + number << endl;
+		cout << "Do you want to calculate the square root of another number? (y/n): ";
+		cin >> choice;
+	}
 
-    return 0;
+	while (choice == 'y' || choice == 'Y');
+
+	return 0;
 }
