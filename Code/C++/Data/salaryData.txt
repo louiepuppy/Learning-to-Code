@@ -1,7 +1,11 @@
-Ronnie Zamora 45
-Andy Smith 35
-Nancy Lopez 25
-Rudy Miller 15
-Abel Gonzalez 20
-John Doe 42
-Mary Doe 18
+Name            Hours       Salary      Pay
+Ronnie Zamora   45          250.00      11250.00
+Andy Smith      35          200.00      7000.00
+Nancy Lopez     25          150.00      3750.00
+Rudy Miller     15          100.00      1500.00
+Abel Gonzalez   20          150.00      3000.00
+John Doe        42          250.00      10500.00
+Mary Doe        18          100.00      1800.00
+----------------------------------------------------
+Minimum Pay: 1800.00
+Maximum Pay: 11250.00

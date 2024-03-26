@@ -1,6 +1,7 @@
-40
-35
-38
-29
-44
-41
+Ronnie Zamora   45
+Andy Smith      35
+Nancy Lopez     25
+Rudy Miller     15
+Abel Gonzalez   20
+John Doe        42
+Mary Doe        18
