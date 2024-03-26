@@ -7,9 +7,8 @@ int main() {
     int hours[NUM_EMPLOYEES];
     int count = 0;
 
-    ifstream inFile("/Data/arraysData.txt");
+    ifstream inFile("Data/arraysData.txt");
 
-    inFile.open("/Data/arrays.txt");
     if (!inFile.is_open()) {
         cout << "Could not open file";
         return 1;
@@ -21,7 +20,7 @@ int main() {
 
         cout << "The hours worked by each employee are\n";
         for (int employee = 0; employee < count; employee++) {
-            cout << "Employee " << employee + 1 << ":";
+            cout << "Employee " << employee + 1 << ": ";
             cout << hours[employee] << endl;
         }
     }
