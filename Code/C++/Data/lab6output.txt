@@ -1,0 +1,6 @@
+Name                                     Average             Letter Grade
+Jose R. Sanchez                           92.25                   A
+Juan Ramirez                              74.50                   C
+Maria Aldape                              87.75                   B
+--------------------------------------------------------------------------
+Class Average                             84.83
